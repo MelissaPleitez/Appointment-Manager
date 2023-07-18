@@ -5,51 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body id="back_color">
  
      
     <div class="text-center mb-4">
-        <h1>Appointment Manager</h1>
+        <h1 class="fw-bold text-white">Appointment Manager</h1>
     </div>
 
-    <div class="container mt-5">
+    <div class="container mt-5 card p-4  border border-3">
+        <h3 class="mb-3">Personal Data:</h3>
         <div class="row">
         <div class="col-md-6 col-12">
         <form id="form" class="row g-3">
-        <div class="mb-3 col-auto">
-            <label for="patien_name" class="form-label">Patient's Name:</label>
-            <input type="text" name="patient_name" id="patient_name" class="form-control">
+        <div class="mb-3 col-auto ">
+            <label for="patient_name" class="form-label  fw-bold">Patient Name:</label>
+            <input type="text" name="patient_name" id="patient_name" class="form-control" >
         </div>
         <div class="mb-3 col-auto">
-            <label for="phone" class="form-label">Phone Number:</label>
+            <label for="phone" class="form-label  fw-bold">Phone Number:</label>
             <input type="text" name="phone" id="phone" class="form-control">
         </div>
       <div class="mb-3 col-auto">
-        <label for="date" class="form-label">Date:</label>
+        <label for="date" class="form-label fw-bold">Date:</label>
         <input type="date" name="date" id="date" class="form-control">
       </div>
        <div class="mb-3 col-auto">
-        <label for="time" class="form-label">Time:</label>
+        <label for="time" class="form-label fw-bold">Time:</label>
         <input type="time" name="time" id="time" class="form-control">
        </div>
        <div class="mb-3 col-auto">
-        <label for="symptoms" class="form-label">Symptoms:</label>
+        <label for="symptoms" class="form-label  fw-bold">Symptoms:</label>
         <textarea name="symptoms" id="symptoms" cols="30" rows="10" class="form-control"></textarea>
        </div>
       <div>
-        <button type="submit" class="btn btn-primary">Create Date</button>
+        <button type="submit" class="btn btn_primary_create">Create Date</button>
       </div>
         </form>
         </div>
         <div class="col-md-6 col-12">
-        <div>
-            <h3>Agenda:</h3>
+        <div class="mt-5 text-center">
+            <h3 class="mb-1 ">Appointments:</h3>
         </div>
-        <div id="results">
+        <ul id="results" class="list-group">
 
-        </div>
+        </ul>
         </div>    
         </div>
     </div>

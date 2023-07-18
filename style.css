@@ -1,0 +1,30 @@
+
+
+
+#back_color{
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.back_card_color{
+    background-color: #94bbe9;
+}
+
+.btn_primary_create{
+    background: rgb(238,174,202);
+    color:white;
+    font-weight: bold;
+}
+
+.card_bg_color{
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+svg {
+    width: 21px;
+  }
+
+  .lista-citas .cita button {
+    margin-top: 1rem!important;
+  }
